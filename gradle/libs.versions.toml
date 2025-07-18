@@ -1,0 +1,54 @@
+[versions]
+coroutines = "1.10.1"
+kotlin = "2.0.20"
+arrow = "1.2.4"
+springboot = "3.4.1"
+springDependencyManagement = "1.1.7"
+spotless = "6.25.0"
+java = "17"
+kotlinxSerialization = "1.7.3"
+ktlint = "0.50.0"
+nimbusJoseJwt = "9.48"
+nimbusOAuth2 = "11.20"
+eudiSdJwt = "0.10.0"
+bouncyCastle = "1.79"
+dependencyCheck = "11.1.1"
+sonarqube = "5.1.0.4882"
+bootstrap = "5.3.3"
+jacoco = "0.8.11"
+multiformat = "1.1.0"
+resultMonad = "1.4.0"
+keycloak = "26.0.2"
+waltid = "0.10.0"
+uri-kmp = "0.0.18"
+zxing = "3.5.3"
+tink = "1.16.0"
+
+[libraries]
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+nimbus-jose-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbusJoseJwt" }
+nimbus-oauth2 = { module = "com.nimbusds:oauth2-oidc-sdk", version.ref = "nimbusOAuth2" }
+eudi-sdjwt = { module = "eu.europa.ec.eudi:eudi-lib-jvm-sdjwt-kt", version.ref = "eudiSdJwt" }
+bouncy-castle = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
+bootstrap = { module = "org.webjars:bootstrap", version.ref = "bootstrap" }
+tink = { module = "com.google.crypto.tink:tink", version.ref = "tink" }
+
+multiformat = { module = "org.erwinkok.multiformat:multiformat", version.ref = "multiformat" }
+result-monad = { module = "org.erwinkok.result:result-monad", version.ref = "resultMonad" }
+keycloak-admin-client = { module = "org.keycloak:keycloak-admin-client", version.ref = "keycloak" }
+waltid-mdoc-credentials = { module = "id.walt.mdoc-credentials:waltid-mdoc-credentials-jvm", version.ref = "waltid" }
+uri-kmp = { module = "com.eygraber:uri-kmp", version.ref = "uri-kmp" }
+zxing = { module = "com.google.zxing:javase", version.ref = "zxing" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springboot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+dependency-check = { id = "org.owasp.dependencycheck", version.ref = "dependencyCheck" }
+sonarqube = { id = "org.sonarqube", version.ref = "sonarqube" }
